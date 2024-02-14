@@ -1,11 +1,12 @@
-var dateDiffInDays = function (dateOne, dateTwo) {
+var dateDiffInDays = function (date1, date2) {
 
  
   var date1 = Date.parse(dateOne);
   var date2 = Date.parse(dateTwo);
 
  
-  var diffInMilliseconds =(date1 - date2);
+
+  var diffInMilliseconds = (date2 - date1);	
 
  
   var diffInDays = diffInMilliseconds / (1000 * 60 * 60 * 24);
