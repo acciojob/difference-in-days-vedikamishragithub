@@ -1,5 +1,8 @@
 var dateDiffInDays = function (date1, date2) {
   //   write your code here
+	dateOne=Date.UTC(date1);
+	dateTwo=Date.UTC(date2);
+	return (dateOne-dateTwo);
 };
 
 // Do not change the code below.
