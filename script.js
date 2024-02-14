@@ -1,7 +1,16 @@
 var dateDiffInDays = function (dateOne, dateTwo) {
-  //   write your code here
 
-	return (Date.UTC(dateOne)-Date.UTC(dateTwo));
+ 
+  var date1 = Date.parse(dateOne);
+  var date2 = Date.parse(dateTwo);
+
+ 
+  var diffInMilliseconds =(date1 - date2);
+
+ 
+  var diffInDays = diffInMilliseconds / (1000 * 60 * 60 * 24);
+
+  return diffInDays;
 }
 // Do not change the code below.
 const dateOne = prompt("Enter Start Date.");
